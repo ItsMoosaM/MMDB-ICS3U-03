@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,37 @@
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <a>
+        <h1 id="title">MMDB</h1>
+    </a>
+
+    <label for="movies">Select A Movie:</label>
+    <select name="movies" id="movies">
+        ,<optgroup label="Kung Fu Panda">
+            <option value="Kung Fu Panda">Kung Fu Panda</option>
+            <option value="Kung Fu Panda 2">Kung Fu Panda 2</option>
+            <option value="Kung Fu Panda 3">Kung Fu Panda 3</option>
+        </optgroup>
+        ,<optgroup label="Angry Birds">
+            <option value="Angry Birds">Angry Birds</option>
+            <option value="Angry Birds 2">Angry Birds 2</option>
+        </optgroup>
+        ,<optgroup label="Cars">
+            <option value="Cars">Cars</option>
+            <option value="Cars 2">Cars 2</option>
+            <option value="Cars 3">Cars 3</option>
+        </optgroup>
+    </select>
+
+    <button onclick="getSelected()">Get Info</button>
+
+    <div id="movieBox">
+        <h1 id="movie_title"></h1>
+        <img src="" id="poster" alt="">
+        <iframe src="" frameborder="0"></iframe>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,17 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+#title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#movie_title{
+    text-align: center;
+    text-decoration: underline overline;
+}
+
+#poster{
+    width: 50%;
+}
