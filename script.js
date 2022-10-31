@@ -33,9 +33,11 @@ const getMovie = async (selectedMovie) => {
 
   const trailer = document.getElementById('trailer');
   const movie_title = document.getElementById('movie_title');
+  const overview = document.getElementById('overview');
   const poster = document.getElementById('poster');
 
   movie_title.innerHTML = `${movieData.data.results.at(0).title}`;
+  overview.innerHTML = `${movieData.data.results.at(0).overview}`
   poster.src = `https://image.tmdb.org/t/p/w500${movieData.data.results.at(0).poster_path}`
   trailer.src = `https://www.youtube.com/embed/${extraData.data.videos.results.filter((video) => video.type === "Trailer").at(0).key}`
 
