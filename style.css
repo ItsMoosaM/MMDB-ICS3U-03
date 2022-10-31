@@ -2,6 +2,10 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
 
+body{
+    background-color: rgb(182, 226, 7);
+}
+
 #title{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -14,4 +18,8 @@
 
 #poster{
     width: 50%;
+}
+
+#trailer{
+    position: relative;
 }
