@@ -12,39 +12,43 @@
 </head>
 
 <body>
-    <a>
-        <h1 id="title">MMDB</h1>
-    </a>
-
-    <label for="movies">Select A Movie:</label>
-    <select name="movies" id="movies">
-        ,<optgroup label="Kung Fu Panda">
-            <option value="Kung Fu Panda">Kung Fu Panda</option>
-            <option value="Kung Fu Panda 2">Kung Fu Panda 2</option>
-            <option value="Kung Fu Panda 3">Kung Fu Panda 3</option>
-        </optgroup>
-        ,<optgroup label="Angry Birds">
-            <option value="Angry Birds">Angry Birds</option>
-            <option value="Angry Birds 2">Angry Birds 2</option>
-        </optgroup>
-        ,<optgroup label="Cars">
-            <option value="Cars">Cars</option>
-            <option value="Cars 2">Cars 2</option>
-            <option value="Cars 3">Cars 3</option>
-        </optgroup>
-        ,<optgroup label="Batman">
-            <option value="Batman Begins">Batman Begins</option>
-            <option value="The Dark Knight Rises">The Dark Knight Rises</option>
-        </optgroup>
-    </select>
-
-    <button onclick="getSelected()">Get Info</button>
+    <div id="homeTop">
+        <a href="./index.html">
+            <img id="logo" src="./Images/MMDB Logo New.png" alt="">
+            <!-- <h1 id="title">MMDB</h1> -->
+        </a>
+    </div>
+    <div id="movieSelection">
+        <label for="movies" id="label">Select A Movie From Below</label>
+        <br>
+        <select name="movies" id="movies">
+            ,<optgroup label="Kung Fu Panda">
+                <option value="Kung Fu Panda">Kung Fu Panda</option>
+                <option value="Kung Fu Panda 2">Kung Fu Panda 2</option>
+                <option value="Kung Fu Panda 3">Kung Fu Panda 3</option>
+            </optgroup>
+            ,<optgroup label="Angry Birds">
+                <option value="Angry Birds">Angry Birds</option>
+                <option value="Angry Birds 2">Angry Birds 2</option>
+            </optgroup>
+            ,<optgroup label="Cars">
+                <option value="Cars">Cars</option>
+                <option value="Cars 2">Cars 2</option>
+                <option value="Cars 3">Cars 3</option>
+            </optgroup>
+            ,<optgroup label="Batman">
+                <option value="Batman Begins">Batman Begins</option>
+                <option value="The Dark Knight Rises">The Dark Knight Rises</option>
+            </optgroup>
+        </select>
+        <button onclick="getSelected()">Get Info</button>
+    </div>
 
     <div id="movieBox">
         <h1 id="movie_title"></h1>
         <h4 id="overview"></h4>
         <img src="" id="poster" alt="">
-        <br>
+        <!-- <br> -->
         <iframe src="" frameborder="0" id="trailer"></iframe>
     </div>
 </body>

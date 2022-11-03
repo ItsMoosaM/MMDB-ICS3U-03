@@ -1,26 +1,60 @@
 * {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: 0%;
 }
 
-body{
-    background-color: rgb(182, 226, 7);
-    display: grid;
+body {
+    background-color: #A8F58D;
+    /* display: grid;
+    grid-template-columns: repeat(10, 1fr); */
 }
 
-#title{
+#homeTop{
+    background-color: #84c435;
+}
+
+
+
+#logo {
+    grid-column: span 10;
+    padding: 0.8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 15%;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+    /* scaleX(-1) */
+    transition: all linear ;
+}
+
+#title {
+    grid-column: span 10;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
-#movie_title{
+#movieSelection{
+    grid-column: span 10;
+    align-items: center;
+}
+#movie_title {
+    grid-column: span 10;
     text-align: center;
     text-decoration: underline overline;
 }
 
-#poster{
+#poster {
+    grid-column: span 5;
+
     width: 50%;
 }
 
-#trailer{
+#trailer {
+    grid-column: span 5;
+
     position: relative;
 }
