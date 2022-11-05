@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMDB</title>
+    <link rel="shortcut icon" href="./Images/MMDB Logo Gold.png" type="image/x-icon">
     <script src="./script.js" defer></script>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -14,14 +15,16 @@
 <body>
     <div class="allContainer">
         <div id="homeTop" class="grid-col-span-full">
+            <br>
             <a href="./index.html">
                 <img id="logo" src="./Images/MMDB Logo Gold.png" alt="">
                 <!-- <h1 id="title">MMDB</h1> -->
             </a>
+            <hr>
         </div>
         <div id="movieSelectionContainer" class="grid-col-span-full">
-            <label for="movies" id="label">Select A Movie From Below</label>
             <br>
+            <label for="movies" id="label">Select A Movie From Below</label>
             <br>
             <div id="selectionContainer">
                 <select name="movies" id="movies">
@@ -66,11 +69,11 @@
             </div>
             <br>
             <br>
-            <h4 id="releaseDate"></h4>
+            <h4 id="releaseDate" class="otherInfoNoGenre"></h4>
             <br>
-            <h4 id="productionCompany"></h4>
+            <h4 id="productionCompany" class="otherInfoNoGenre"></h4>
             <br>
-            <h4 id="movieCollection"></h4>
+            <h4 id="movieCollection" class="otherInfoNoGenre"></h4>
         </div>
         <div class="grid-col-span-3 ">
             <a href="" id="backdropImageLink" target="_blank"><img src="" id="backdropImage" alt=""></a>

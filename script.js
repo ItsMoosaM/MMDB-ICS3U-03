@@ -1,6 +1,5 @@
 // api_key= ba4adcc4706ed37650e0a813de11a08f;
 
-
 function getSelected() {
   let selectedMovie = document.getElementById("movies").value;
   console.log(selectedMovie)
