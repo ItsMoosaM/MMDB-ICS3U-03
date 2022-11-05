@@ -1,60 +1,236 @@
 * {
+    background-color: #0f0d06;
+    box-sizing: border-box;
+    color: #c2870c;
+    padding: 0%;
+    margin: 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     margin: 0%;
 }
 
 body {
-    background-color: #A8F58D;
-    /* display: grid;
-    grid-template-columns: repeat(10, 1fr); */
+    /* background-color: #222e2c; */
 }
 
-#homeTop{
-    background-color: #84c435;
+.allContainer {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
 }
 
+.grid-col-span-full {
+    grid-column: span 5;
+}
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+.grid-col-span-3 {
+    grid-column: span 3;
+}
 
+#homeTop {
+    background-color: #0f0d06;
+    padding: 1%;
+}
 
 #logo {
-    grid-column: span 10;
+    background-color: #0f0d06;
     padding: 0.8%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    width: 15%;
+    width: 9%;
+    height: auto;
 }
 
-#logo:hover{
+#logo:hover {
     transform: scale(1.1);
-    /* scaleX(-1) */
-    transition: all linear ;
+    transition: all linear;
+}
+
+#label {
+    font-size: x-large;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #222E2C;
+
+}
+
+#movieSelectionContainer{
+    background-color: #222E2C;
+}
+#selectionContainer{
+    background-color: #222E2C;
+}
+
+#getInfo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#getInfo:hover {
+    background-color: rgb(161, 115, 17);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #title {
-    grid-column: span 10;
+    padding-bottom: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    grid-column: span 5;
+    background-color: #a5a299;
 }
 
-#movieSelection{
-    grid-column: span 10;
-    align-items: center;
-}
-#movie_title {
-    grid-column: span 10;
+#tagline {
     text-align: center;
+}
+#movies {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 15px #c2870c;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    min-height: 35px;
+    background-color: #222e2c;
+    font-size: 190%;
+    border: 2px solid #c2870c;
+    border-radius: 0.9rem;
+    outline: none;
+    appearance: none;
+    grid-column: span 5;
+    padding: 1%;
+}
+
+.backGrey{
+    background-color: #222E2C;
+}
+
+/* #selectionContainer::after{
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #C2870C;
+    display: inline-block;
+    position: relative;
+} */
+
+#getInfo {
+    width: 15% ;
+    height: 30%;
+    min-height: 35px;
+    color: #141006;
+    background-color: #c2870c;
+    border-radius: 0.2rem;
+    font-size: x-large;
+}
+
+#movie_title {
+    text-align: center;
+    font-size: 2rem;
     text-decoration: underline overline;
 }
 
 #poster {
-    grid-column: span 5;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
+    height: auto;
+    grid-column: span 2;
 }
 
 #trailer {
-    grid-column: span 5;
+    display: block;
+    margin: auto;
+    min-height: 100px;
+    width: 90%;
+    height: 90%;
+}
 
-    position: relative;
+#overview {
+    padding: 5% 5%;
+    font-size: larger;
+    text-align: center;
+}
+
+#genreTitle {
+    text-align: center;
+}
+
+#genresContainer{
+    /* background-color: #222E2C; */
+}
+
+#genres {
+    display: block;
+    padding-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #222E2C; */
+
+}
+
+.otherInfo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #222E2C; */
+
+}
+
+/* #releaseDate{
+    background-color: #222E2C;
+}
+#productionCompany{
+    background-color: #222E2C;
+}
+#releaseDate{
+    background-color: #222E2C;
+} */
+#backdropImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+}
+
+#backdropImage:hover {
+    transform: scale(1.05);
+}
+
+#movieWebsite {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    text-align: center;
+}
+
+#footer {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#left {
+    display: inline;
+    text-align: left;
+}
+#right {
+    display: inline;
+    text-align: right;
 }
