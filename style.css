@@ -8,6 +8,11 @@
     margin: 0%;
 }
 
+hr{
+    border-color: #c2870c;
+    border-width: 4px;
+}
+
 body {
     /* background-color: #222e2c; */
 }
@@ -93,10 +98,10 @@ body {
 
 @keyframes glowEffect {
     from {
-        box-shadow: 0px 0px 25px #c2870c;
+        box-shadow: 0px 0px 28px #c2870c;
     }
     to {
-        box-shadow: 0px 0px 15px #c2870c;
+        box-shadow: 0px 0px 10px #c2870c;
     }
 }
 
@@ -145,6 +150,8 @@ option {
     border-top-color: #C2870C;
     display: inline-block;
     position: relative;
+    bottom: 40px;
+    left: 550px;
 } */
 
 #getInfo {
@@ -261,13 +268,22 @@ option {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-bottom: 5px;
+    clear: both;
 }
 
 #left {
-    display: inline;
+    display: inline-block;
     text-align: left;
+    justify-content: left;
+    float: left;
+    padding-left: 2%;
+
 }
 #right {
-    display: inline;
+    display: inline-block;
     text-align: right;
+    justify-content: right;
+    float: right;
+    padding-right: 2%;
 }
