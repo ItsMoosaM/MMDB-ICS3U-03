@@ -1,5 +1,8 @@
 // api_key= ba4adcc4706ed37650e0a813de11a08f;
 
+let placeholderRemoved=false;
+
+
 function getSelected() {
   let selectedMovie = document.getElementById("movies").value;
   console.log(selectedMovie)
@@ -33,11 +36,19 @@ const getMovie = async (selectedMovie) => {
 
   let movieDataResults = extraData.data;
 
+  //Removes Place Holder Text
+  if (placeholderRemoved == false) {
+    const placeholder = document.getElementById("selectAMoviePlaceholder");
+    placeholder.remove();
+    placeholderRemoved=true
+  }else{
+    //Do Nothing
+  }
+ 
   console.log(lessMovieDataResults);
   console.log(movieDataResults);
 
-  
-  
+
   
   const movie_title = document.getElementById('movie_title');
   const tagline = document.getElementById('tagline');

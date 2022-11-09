@@ -8,14 +8,29 @@
     margin: 0%;
 }
 
+#searchBox:focus{
+    outline: none;
+    border-width: 3px;
+    border-color: #ffbd2f;
+    animation-name: glowEffectSelected;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+::placeholder{
+    color: #c2880ce6;
+}
+
 hr{
     border-color: #c2870c;
     border-width: 4px;
 }
 
-body {
-    /* background-color: #222e2c; */
-}
+/* body {
+    background-color: #222e2c;
+} */
 
 .allContainer {
     display: grid;
@@ -31,6 +46,28 @@ body {
 }
 .grid-col-span-3 {
     grid-column: span 3;
+}
+
+#searchBox{
+    display: block;
+    margin: 1% auto;
+    box-shadow: 0px 0px 15px #c2870c;
+    text-align: left;
+    width: 90%;
+    height: 25%;
+    min-height: 35px;
+    /* background-color: #222e2c; */
+    font-size: 180%;
+    border: 2px solid #c2870c;
+    border-radius: 0.9rem;
+    grid-column: span 5;
+    padding: 2%;
+    padding-left: 2%;
+    /* Animation */
+    animation-name: glowEffect;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #homeTop {
@@ -63,32 +100,13 @@ body {
     /* background-color: #222e2c; */
 }
 
-#movieSelectionContainer {
-    /* background-color: #222e2c; */
+/* #movieSelectionContainer {
+    background-color: #222e2c;
 }
 #selectionContainer {
-    /* background-color: #222e2c; */
-}
+    background-color: #222e2c;
+} */
 
-#getInfo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#getInfo:hover {
-    background-color: rgb(161, 115, 17);
-    border: rgb(161, 115, 17);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#getInfo:active {
-    background-color: rgb(255, 180, 18);
-    border: rgb(255, 180, 18);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 #movie_title {
     /* padding-bottom: 1.5rem; */
@@ -106,7 +124,15 @@ body {
 
 @keyframes glowEffect {
     from {
-        box-shadow: 0px 0px 28px #c2870c;
+        box-shadow: 0px 0px 24px #c2870c;
+    }
+    to {
+        box-shadow: 0px 0px 10px #c2870c;
+    }
+}
+@keyframes glowEffectSelected {
+    from {
+        box-shadow: 0px 0px 32px #c2870c;
     }
     to {
         box-shadow: 0px 0px 10px #c2870c;
@@ -163,6 +189,9 @@ option {
 } */
 
 #getInfo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 30%;
     height: 30%;
     min-height: 35px;
@@ -170,8 +199,24 @@ option {
     background-color: #c2870c;
     border-radius: 0.2rem;
     font-size: x-large;
+    border-radius: 28px;
+    cursor: pointer;
 }
 
+#getInfo:hover {
+    background-color: rgb(161, 115, 17);
+    border: rgb(161, 115, 17);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#getInfo:active {
+    background-color: rgb(255, 180, 18);
+    border: rgb(255, 180, 18);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 #movie_title {
     text-align: center;
     font-size: 300%;
@@ -207,9 +252,9 @@ option {
     font-size: 200%;
 }
 
-#genresContainer {
-    /* background-color: #222E2C; */
-}
+/* #genresContainer {
+    background-color: #222E2C;
+} */
 
 #genres {
     display: block;
@@ -281,7 +326,6 @@ option {
 }
 
 #left {
-    display: inline-block;
     text-align: left;
     justify-content: left;
     float: left;
@@ -289,7 +333,6 @@ option {
 
 }
 #right {
-    display: inline-block;
     text-align: right;
     justify-content: right;
     float: right;
