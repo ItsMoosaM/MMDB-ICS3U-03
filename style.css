@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 * {
     background-color: #0f0d06;
     box-sizing: border-box;
     color: #c2870c;
     padding: 0%;
     margin: 0;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Lilita One","Rubik Bubbles","Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     margin: 0%;
 }
 
@@ -13,9 +14,9 @@ hr{
     border-width: 4px;
 }
 
-body {
-    /* background-color: #222e2c; */
-}
+/* body {
+    background-color: #222e2c;
+} */
 
 .allContainer {
     display: grid;
@@ -63,12 +64,12 @@ body {
     /* background-color: #222e2c; */
 }
 
-#movieSelectionContainer {
-    /* background-color: #222e2c; */
+/* #movieSelectionContainer {
+    background-color: #222e2c;
 }
 #selectionContainer {
-    /* background-color: #222e2c; */
-}
+    background-color: #222e2c;
+} */
 
 #getInfo {
     display: block;
@@ -223,9 +224,9 @@ option {
     font-size: 200%;
 }
 
-#genresContainer {
-    /* background-color: #222E2C; */
-}
+/* #genresContainer {
+    background-color: #222E2C;
+} */
 
 #genres {
     display: block;
@@ -297,7 +298,6 @@ option {
 }
 
 #left {
-    display: inline-block;
     text-align: left;
     justify-content: left;
     float: left;
@@ -305,7 +305,6 @@ option {
 
 }
 #right {
-    display: inline-block;
     text-align: right;
     justify-content: right;
     float: right;
